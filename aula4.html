@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <script>
+        //Aula de Valor vs Referências
+
+        //Função tipo valor
+        function multVal(n){
+            n *= n
+            return n
+        }
+
+        let numVal = 10
+        console.log(multVal(numVal))
+        // o valor não é alterado
+        console.log(numVal)
+
+        function multObj(obj){
+            obj.value *= obj.value
+            return obj
+        }
+        let numObj = {value : 10}
+        console.log(multObj(numObj))
+        // valor e alterado ... quando uma variavel é passado com o tipo objeto são passadas como referência
+        console.log(numObj)
+    </script>
+</html>
