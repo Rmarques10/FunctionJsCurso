@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <script>
+       //Casas decimais - formatação e arredondamento
+
+        let value = 1234.56
+       //toFixed()
+       console.log(value.toFixed(1))
+       //Math.ceil()
+       console.log(Math.ceil(value))
+       //Math.floor()
+       console.log(Math.floor(value))
+       //Math.round()
+       console.log(Math.round(value))
+       //new IntL.NumberFormat.format()
+       console.log(
+        new Intl.NumberFormat("pt-BR", {
+            style: "currency",
+            currency: "BRL",
+        }).format(value)
+       )
+    </script>
+</html>
